@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Neal Coates</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Your Full Name, Keywords Summary">
+    <meta name="author" content="Neal Coates">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD131-Neal Coates</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals-Neal Coates</h1>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <section class="card">
+                <h2>Card 1 Heading</h2>
+                <p>Content for the first card. This is an example of a section that contains some information. Here are
+                    some
+                    resources:</p>
+                <ul>
+                    <li><a href="https://www.example.com">Example Resource 1</a></li>
+                    <li><a href="https://www.example.com">Example Resource 2</a></li>
+                    <li><a href="https://www.example.com">Example Resource 3</a></li>
+                </ul>
+                <img src="images/example1.jpg" alt="Example Image 1">
+            </section>
+            <section class="card">
+                <h2>Card 2 Heading</h2>
+                <p>Content for the second card. This is another example of a section that contains some information.
+                    Here
+                    are some resources:</p>
+                <ul>
+                    <li><a href="https://www.example.com">Example Resource 1</a></li>
+                    <li><a href="https://www.example.com">Example Resource 2</a></li>
+                    <li><a href="https://www.example.com">Example Resource 3</a></li>
+                </ul>
+                <img src="images/example2.jpg" alt="Example Image 2">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Neal Coates, Washington, USA.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
