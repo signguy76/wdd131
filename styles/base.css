@@ -54,7 +54,7 @@ main {
 
 .card-wide {
     flex: 3; /* Make this card twice as wide */
-    padding-right: 200px;
+    padding-right: 10px;
 }
 
 .card-narrow {
@@ -67,6 +67,11 @@ main {
     color: #fff; /* Ensure the text is readable with white color */
     padding: 0.5rem; /* Add some padding for better appearance */
     border-radius: 5px 5px 0 0; /* Round the top corners */
+}
+
+
+.card-wide p {
+    padding-right: 200px; /* Add 200px padding to the right of the paragraph in card-wide */
 }
 
 .card ul {
