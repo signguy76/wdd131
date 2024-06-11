@@ -54,7 +54,7 @@ main {
 
 .card-wide {
     flex: 3; /* Make this card twice as wide */
-    
+    padding-right: 200px;
 }
 
 .card-narrow {
