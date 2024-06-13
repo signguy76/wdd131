@@ -59,6 +59,9 @@ main {
 h3 {
     text-align: center;
 }
+/*.country p2 {
+    padding: 300px 20px 20px;
+}*/
 /*.country {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -72,19 +75,30 @@ h3 {
 .card-narrow {
     flex: 1; /* Make this card standard width */
 } 
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+h4 {
+    text-align: center;
+}
 
 .card h2 {
     margin-top: 0;
     background-color: #174E71; /* Add blue background to card headings */
     color: #fff; /* Ensure the text is readable with white color */
     padding: 0.5rem; /* Add some padding for better appearance */
-    border-radius: 5px 5px 0 0; /* Round the top corners */
+    border-radius: 10px 10px 0 0; /* Round the top corners */
 }
 
 
 .card-wide p {
     padding-right: 200px; /* Add 200px padding to the right of the paragraph in card-wide */
+}
+.card-wide p2 {
+    padding: 200px 20px 20px 20px; /* Adding left padding explicitly */
 }
 
 .card ul {
