@@ -15,7 +15,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between; /* Ensure items are equally spaced */
+    justify-content: space-around; /* Ensure items are equally spaced */
     background-color: black; /* Add black background */
     padding: 1rem; /* Add padding for spacing */
 }
