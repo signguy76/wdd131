@@ -13,11 +13,12 @@ header {
     text-align: center;
 }
 
-nav {
+nav ul {
     display: flex;
     justify-content: space-around; /* Ensure items are equally spaced */
     background-color: black; /* Add black background */
     padding: 1rem; /* Add padding for spacing */
+    list-style-type: none;
 }
 
 nav a {
