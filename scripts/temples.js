@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById('year');
     const lastModifiedSpan = document.getElementById('lastModified');
     const currentYear = new Date().getFullYear();
-    const lastModifiedDate = document.lastModified;
+    const lastModifiedDate = new Date(document.lastModified).toLocaleDateString();
 
     yearSpan.textContent = currentYear;
     lastModifiedSpan.textContent = lastModifiedDate;
