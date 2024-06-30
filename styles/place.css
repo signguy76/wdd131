@@ -63,14 +63,16 @@ main {
 }
 
 .weather-icon {
-    text-align: center;
-    margin-top: 1rem;
+    font-size: 1rem;
+    display: inline; /* Displayed for mobile view */
 }
 
-.mobile-icon {
-    width: 10px;
-    
+@media (min-width: 600px) {
+    .weather-icon {
+        display: none; 
+    }
 }
+
 
 footer {
     background-color: var(--secondary-color);
