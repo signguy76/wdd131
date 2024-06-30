@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #0000FF;
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --overlay-background: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-overlay, .weather-overlay {
+    background-color: var(--overlay-background);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.info-overlay h2, .weather-overlay h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.info-overlay ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-overlay li {
+    margin-bottom: 0.5rem;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-icon {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.mobile-icon {
+    width: 10px;
+    
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .weather-info {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        position: relative;
+    }
+
+    .info-overlay, .weather-overlay {
+        position: absolute;
+        max-width: 300px;
+        margin-top: 0;
+        background-color: var(--overlay-background);
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .info-overlay {
+        top: 2rem;
+        right: 5%;
+    }
+
+    .weather-overlay {
+        bottom: 2rem;
+        left: 5%;
+    }
+
+    .weather-overlay h2::after {
+        content: "⛅";
+        margin-left: 0.5rem;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+}
