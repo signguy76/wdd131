@@ -74,6 +74,8 @@ const temples = [
 
 ];
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById('year');
     const lastModifiedSpan = document.getElementById('lastModified');
@@ -98,6 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const templeContainer = document.getElementById('temple-container');
     const links = document.querySelectorAll('nav ul li a');
 
+    function updateTitle(filter) {
+        const titleElement = document.querySelector('main h2');
+        const capitalizedFilter = filter.charAt(0).toUpperCase() + filter.slice(1);
+        titleElement.textContent = capitalizedFilter + ' Temples List';
+    }
+
     function displayTemples(filter) {
         templeContainer.innerHTML = '';
         let filteredTemples = temples;
@@ -111,6 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (filter === 'small') {
             filteredTemples = temples.filter(temple => temple.area < 10000);
         }
+
+        updateTitle(filter);
 
         filteredTemples.forEach(temple => {
             const templeCard = document.createElement('div');
