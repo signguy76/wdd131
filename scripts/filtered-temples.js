@@ -65,13 +65,13 @@ const temples = [
     },
     {
         templeName: "Oakland California Temple",
-        location: "Oakland, California",
+        location: "Oakland, California, United States",
         dedicated: "1964, November, 17-19",
         area: 80157,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/oakland-california-temple/oakland-california-temple-2654-main.jpg"
     },
-    // Add more temple objects here...
+
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
