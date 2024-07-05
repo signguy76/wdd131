@@ -1,41 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Church of Jesus Christ of Latter-day Saints Temple Album">
-    <meta name="author" content="Neal Coates">
-    <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
-    <script src="scripts/filtered-temples.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+background-color: #174E71;
+color: #fff;
+}
 
-<body>
-    <header>
-        <h1>Temple Album</h1>
-        <nav>
-            <ul>
-                <li><a href="#" data-filter="home">Home</a></li>
-                <li><a href="#" data-filter="old">Old</a></li>
-                <li><a href="#" data-filter="new">New</a></li>
-                <li><a href="#" data-filter="large">Large</a></li>
-                <li><a href="#" data-filter="small">Small</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Home</h2>
-        <div id="temple-container"></div>
-    </main>
-    <footer>
-        <p>&copy; <span id="year"></span> Neal Coates</p>
-        <p>Last updated: <span id="lastModified"></span></p>
-    </footer>
-</body>
+nav ul {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+}
 
-</html>
+nav ul li {
+margin: 0 1rem;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.nav-toggle {
+display: none;
+background: none;
+border: none;
+font-size: 2rem;
+cursor: pointer;
+}
+
+@media (max-width: 600px) {
+.nav-toggle {
+display: block;
+}
+
+nav ul {
+display: none;
+flex-direction: column;
+}
+
+nav.open ul {
+display: flex;
+}
+}
+
+main {
+max-width: 1300px;
+margin: 0 auto;
+padding: 1rem;
+}
+
+#temple-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1rem;
+justify-items: center;
+}
+
+.temple-card {
+border: 1px solid #ccc;
+border-radius: 8px;
+overflow: hidden;
+width: 100%;
+max-width: 300px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+}
+
+.temple-card img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.temple-card h3 {
+font-size: 1.25rem;
+margin: 1rem 0 0.5rem;
+}
+
+.temple-card p {
+margin: 0.5rem 0;
+}
+
+footer {
+text-align: center;
+padding: 1rem;
+background-color: #174E71;
+color: #fff;
+}
