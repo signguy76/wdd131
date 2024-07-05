@@ -7,9 +7,9 @@
     <meta name="description" content="Church of Jesus Christ of Latter-day Saints Temple Album">
     <meta name="author" content="Neal Coates">
     <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -20,52 +20,17 @@
         <h1>Temple Album</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Home</h2>
-        <figure>
-            <img src="images/oakland-california-temple.jpg" width="250" alt="Oakland Temple Image">
-            <figcaption>Oakland, California</figcaption>
-        </figure>
-        <figure>
-            <img src="images/salt-lake-temple.jpg" width="250" alt="Salt Lake Temple Image">
-            <figcaption>Salt Lake, Utah</figcaption>
-        </figure>
-        <figure>
-            <img src="images/manti-temple.jpg" width="250" alt="Manti Temple Image">
-            <figcaption>Manti, Utah</figcaption>
-        </figure>
-        <figure>
-            <img src="images/kona-hawaii.jpg" width="250" alt="Kona Temple Image">
-            <figcaption>Kona, Hawaii</figcaption>
-        </figure>
-        <figure>
-            <img src="images/los-angeles-california.jpg" width="250" alt="Los Angeles Temple Image">
-            <figcaption>Los Angeles, California</figcaption>
-        </figure>
-        <figure>
-            <img src="images/exterior_washington_dc.jpeg" width="250" alt="Washington DC Temple Image">
-            <figcaption>Washington, DC</figcaption>
-        </figure>
-        <figure>
-            <img src="images/dallas-texas.jpg" width="250" alt="Dallas Temple Image">
-            <figcaption>Dallas, Texas</figcaption>
-        </figure>
-        <figure>
-            <img src="images/boise-idaho-temple.jpg" width="250" alt="Boise Temple Image">
-            <figcaption>Boise, Idaho</figcaption>
-        </figure>
-        <figure>
-            <img src="images/mesa-arizona-temple.jpeg" width="250" alt="Mesa Temple Image">
-            <figcaption>Mesa, Arizona</figcaption>
-        </figure>
+        <div id="temple-container"></div>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Neal Coates</p>
