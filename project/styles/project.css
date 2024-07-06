@@ -59,22 +59,28 @@ ul li:nth-child(even) {
     color: #333; /* Dark text color */
 }
 
-/* Wireframe images */
-.wireframe {
+/* Wireframe images container */
+.wireframe-container {
     display: grid;
     gap: 20px;
 }
 
-.wireframe img {
-    width: 100%;
-    height: auto;
+/* Individual wireframe item */
+.wireframe-container div {
+    text-align: center;
 }
 
 /* Responsive styles */
 @media (min-width: 768px) {
-    .wireframe {
+    .wireframe-container {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* Wireframe images */
+.wireframe-container img {
+    width: 100%;
+    height: auto;
 }
 
 /* Footer styles */
