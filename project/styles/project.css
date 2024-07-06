@@ -1,0 +1,89 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #00509e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #00509e;
+    margin-bottom: 10px;
+    background-color: #bebecc;
+}
+
+/* UL and LI styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #00509e; /* Dark blue for the background */
+    color: white; /* White text color */
+}
+
+ul li:nth-child(even) {
+    background-color: #bebecc; /* Medium gray for alternating items */
+    color: #333; /* Dark text color */
+}
+
+/* Wireframe images */
+.wireframe {
+    display: grid;
+    gap: 20px;
+}
+
+.wireframe img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .wireframe {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #00509e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
