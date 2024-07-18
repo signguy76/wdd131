@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul {
-    background-color: rgba(23, 78, 113, 0.9);  /* Semi-transparent background */
+    background-color: rgba(23, 78, 113, 0.9);  
     border-radius: 5px;
     padding: 10px;
 }
