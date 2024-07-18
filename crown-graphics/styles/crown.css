@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #bebecc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #174E71;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+.hero, .services, .contact, .map, .testimonials {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero {
+    background-image: none;  /* Remove the previous background image */
+}
+
+nav ul {
+    background-color: rgba(23, 78, 113, 0.9);  /* Semi-transparent background */
+    border-radius: 5px;
+    padding: 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.hero {
+    background: url(images/classroom.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 1rem;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.more-item button {
+    padding: 1rem 2rem;
+    background-color: #ff5722;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.gold-item h3{
+    color: gold;
+}
+.more-item button:hover {
+    background-color: #e64a19;
+}
+.about {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.about h2 {
+    color: #174E71;
+    margin-bottom: 1rem;
+}
+.service-item {
+    margin: 1rem 0;
+}
+
+.flag-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.graphic-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.graphic-content h2 {
+    padding: 10px;
+}
+.flag-content h2 {
+    padding: 10px;
+}
+.sign-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+.about p {
+    line-height: 1.6;
+    text-align: justify;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.about, .services, .contact, .map, .testimonials {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.service-item {
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #174E71;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 10rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+}
